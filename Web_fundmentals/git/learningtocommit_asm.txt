@@ -1,0 +1,39 @@
+
+
+//creating directory
+mkdir gittest
+
+//navigate and initilize git
+
+cd gittest
+git init
+
+//creating three files
+touch index.html style.css aboutMe.txt
+
+//first commit 
+
+git add .
+git commit -m "adding three files"
+
+//upating about Me
+
+git add .
+git commit -m "updated aboutMe"
+
+//addign favorite movei
+
+git add .
+git commit -m "addning favotie move to aboutMe"
+
+//seeing log file
+
+git log
+
+//reverting 
+
+git revert -n "commit id"
+git commit -m "change favorite movie to favorite book in aboutMe.txt"
+
+
+

@@ -1,0 +1,165 @@
+
+*{
+ margin: 0px;
+ padding: 0px;
+}
+
+#wrapper{
+ width: 970px;
+ background-color: #FCFCFC;
+ margin: 0px auto;
+ padding: 15px;
+}
+
+#header-left{
+	color: black;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	display: inline-block;
+	position: relative;
+	right: 0px;
+}
+
+#header-right{
+	color: black;
+	font-family: sans-serif;
+	display: inline-block;
+	position: relative;
+	left: 300px;
+
+}
+
+#main-content{
+	background-color: #6F5964;
+	height: 885px;
+	padding: 15px;
+	margin: 8px;
+}
+
+#my-photo{
+	width: 350px;
+	height: 250px;
+	border: 5px solid #C0C0C0;
+	display: inline-block;
+}
+
+#about{
+	width: 540px;
+	height: 260px;
+	background-color: #EFE9EF;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 10px;
+}
+
+#la-mode{
+	width: 295px;
+	height: 350px;
+	background-color: #EFE9EF;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0;
+	margin-top: 10px;
+	margin-right: 10px;
+
+}
+
+#family-contacts{
+	width: 295px;
+	height: 350px;
+	background-color: #EFE9EF;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 10px;
+	margin-right: 10px;
+
+}
+
+#five-eleven{
+	width: 295px;
+	height: 350px;
+	background-color: #EFE9EF;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 10px;
+	margin-right: 10px;
+
+}
+
+#continue-reading{
+	text-decoration: underline;
+	padding: 5px;
+}
+
+.body-header{
+	color: #FFFFFF;
+	background-color:#878593;
+	height: 40px;
+	padding: 5px;
+}
+
+.three-image{
+	width: 295px;
+	height: 200px;
+}
+
+.technology{
+	width: 295px;
+	height: 250px;
+	background-color: #EFE9EF;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+.technology-image{
+	width: 45px;
+	height: 45px;
+	padding: 5px;
+}
+
+.technology-button{
+	text-align: center;
+
+}
+
+.t-button{
+	color: white;
+	background-color: #407D61;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 15px;
+}
+#footer-info{
+	text-align: center;
+	color: #7086AA;
+
+}
+
+.footer-link{
+	display: inline-block;
+	text-align: center;
+	margin-right: 10px;
+	position: relative;
+	left: 310px;
+}
+
+.footer-image{
+	width: 20px;
+	height: 20px;
+}
+
+.center{
+	text-decoration: none;
+	position: relative;
+	bottom: 5px;
+	color: #465C61;
+	font-style: italic;
+	text-decoration: underline;
+}
+p{
+	padding: 5px;
+}
+
+
+

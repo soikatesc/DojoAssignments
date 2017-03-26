@@ -1,0 +1,42 @@
+
+*{
+ margin: 5px;
+ padding: 0px;
+}
+
+#wrapper{
+ width: 970px;
+ background-color: white;
+ margin: 0px auto;
+ padding: 15px;
+ 
+}
+
+ul{
+	list-style-type: none;
+	margin: 2px;
+	padding: 2px;
+	background-color: #47484b;
+    background: radial-gradient(#8a8f9f, #47484b);
+}
+
+li{
+	display: inline-block;
+	margin-right: 50px;
+	padding: 10px;
+
+}
+li+li { 
+	border-left: 1px solid red;
+ }
+
+ a{
+ 	font-size: 30px;
+ 	text-decoration: none;
+ 	color: white;
+ }
+
+
+
+
+
