@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Jquery Form</title>
+		<meta charset="UTF-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+		<script type="text/javascript">
+            
+            //return false doesn't allow the page to refresh 
+            //.submit works in two ways
+            //.serialize preps froms begin haldled by a computer
+
+		$(document).ready(function(){
+            
+			
+           $('#myDiv').children('p').css('background-color','green');
+            
+            $('p').click(function(){
+                console.log($(this));
+            });
+		
+		});
+		
+
+		</script>
+	</head>
+
+
+	<body>
+       
+        <div id="myDiv">
+            <p>Here is a paragraph. It is a beautiful paragraph</p>
+            <h3>Michael Choi</h3>
+            <h3>John Choi</h3>
+            <h3>Trey Choi</h3>
+        </div>
+
+		
+	</body>
+
+
+
+</html>

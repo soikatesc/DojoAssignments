@@ -1,0 +1,83 @@
+
+
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+#wrapper{
+    width: 950px;
+ 	background-color: yellowgreen;
+ 	margin: 0px auto;
+    padding: 20px;
+ 
+}
+
+#add-user{
+    display: inline-block;
+}
+
+#contact-card{
+    display: inline-block;
+    width: 400px;
+    vertical-align: top;
+    margin-left: 60px;
+    margin-top: 100px;
+/*    background-color: #262626;*/
+    background-color: white;
+    color: white;
+    text-align: center;
+    border: 2px solid yellow;
+}
+
+#contact-card h1{
+    color: black;
+    
+}
+
+#contact-card p{
+    color: black;
+    font-size: 20px;
+    margin-bottom: 10px;
+    
+}
+
+#new{
+    border: 2px solid black;
+    padding: 10px;
+}
+
+
+#add-user h1{
+    padding: 10px;
+    color: #001a00;
+    border-bottom: 2px solid black;
+    display: inline-block;
+    margin-top: 30px ;
+    margin-bottom: 30px;
+}
+input{
+    margin: 10px;
+    background: yellowgreen;
+    border: 2px solid yellow;
+}
+
+form{
+    margin-left: 110px;
+}
+
+input{
+    padding: 10px;
+}
+
+textarea{
+    margin-top: 10px;
+    border: 1px solid #888;
+    outline: none;
+    resize: none;
+    width: 250px;
+    height: 150px;
+    background-color: #FF9800;
+}
+

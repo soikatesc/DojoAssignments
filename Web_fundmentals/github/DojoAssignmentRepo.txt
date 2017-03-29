@@ -1,0 +1,23 @@
+
+//initilize git reposotory
+
+.git 
+
+//add, commit and push to github
+
+git add 
+git commit -m "initial commit"
+git remote add origin https://github.com/soikatesc/DojoAssignments.git
+git push -u origin master
+
+// creating readme.md
+
+touch readme.md
+
+//checking status
+
+git status
+git add
+git commit -m "inserting readme.md"
+git push origin master
+git status

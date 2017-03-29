@@ -1,0 +1,40 @@
+
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+#wrapper{
+    width: 970px;
+ 	background-color: lightblue;
+ 	margin: 0px auto;
+ 	padding: 15px;
+ 
+}
+
+
+button{
+	padding: 15px;
+	background-color: #008CBA;
+	border-radius: 5px;
+	border: none;
+	color: white;
+	font-size: 15px;
+	width: 120px;
+    text-align: center;
+    margin: 0px auto;
+    margin-left: 418px;
+    
+}
+
+img{
+    width: 219px;
+    margin: 10px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+

@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Jquery</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+		<script type="text/javascript">
+
+		$(document).ready(function(){
+			$("#show").click(function(){
+				$("#click-property-p").show();
+			});
+
+			$("#hide").click(function(){
+				$("#hide-property-p").hide();
+			});
+
+			$("#toggle").click(function(){
+				$("#toggle-property-p").toggle();
+			});
+
+			$("#slideDown").click(function(){
+				$("#slide-down-input").slideDown();
+			});
+
+			$("#slideUp").click(function(){
+				$("#slide-Up-input").slideUp();
+			});
+
+			$("#fadein").click(function(){
+				$("#fade-in-p").fadeIn();
+			});
+
+			$("#fadeout").click(function(){
+				$("#fade-out-p").fadeOut();
+			});
+
+			$("#add-class").click(function(){
+				$("#add-class-p").addClass("addclass");
+			});
+		
+		});
+		
+		</script>
+	</head>
+
+
+	<body>
+
+		<div id="wrapper">
+			<div id="click-property">
+				<button id="show" type="button">Show Me</button>
+				<h1>AddClass</h1>
+				<p id="click-property-p">Click the button</p>
+			</div>
+
+			<hr/>
+
+			<div id="hide-property">
+				<button id="hide" type="button">Hide Me</button>
+				<h1>Hide</h1>
+				<p id="hide-property-p">Click on the button and no longer see me</p>
+			</div>
+
+			<hr/>
+
+			<div id="toggle-property">
+				<button id="toggle" type="button">Toggle Me</button>
+				<h1>Toggle</h1>
+				<p id="toggle-property-p">Toggle this paragraph</p>
+			</div>
+
+			<hr/>
+
+			<div id="slideDown-property">
+				<button id="slideDown" type="button">SlideDown</button>
+				<h1>SlideDown</h1>
+				<input id="slide-down-input" type="text">
+			</div>
+
+			<hr/>
+
+			<div id="slideUp-property">
+				<button id="slideUp" type="button">SlideUp</button>
+				<h1>SlideUp</h1>
+				<input id="slide-Up-input" type="text">
+			</div>
+
+			<hr/>
+
+			<div id="fadeIn-property">
+				<button id="fadein" type="button">SlideUp</button>
+				<h1>fadeIn</h1>
+				<p id="fade-in-p">This paragraph will fadein</p>
+			</div>
+
+			<hr/>
+
+			<div id="fadeOut-property">
+				<button id="fadeout" type="button">SlideDown</button>
+				<h1>fadeOut</h1>
+				<p id="fade-out-p">This paragraph will fadeout</p>
+			</div>
+
+			<hr/>
+
+			<div id="add-class-property">
+				<button id="add-class" type="button">AddCalss</button>
+				<h1>AddClass</h1>
+				<p id="add-class-p">Adding a class to this paragraphs</p>
+			</div>
+
+			<hr/>
+
+
+		</div>
+		
+	</body>
+
+
+
+</html>

@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Jquery</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+		<script type="text/javascript">
+
+		$(document).ready(function(){
+            
+             $('img').click(function(){
+                var t1=$(this).attr('src2');
+                var t2=$(this).attr('src');
+                
+                $(this).attr('src',t1);
+                $(this).attr('src2',t2)
+            });
+		
+            
+		});
+            
+		</script>
+	</head>
+
+
+	<body>
+        <div id="wrapper">
+            
+            <img src="img/ninja0.png" src2="img/cat0.png">
+            <img src="img/ninja1.png" src2="img/cat1.png">
+            <img src="img/ninja2.png" src2="img/cat2.png">
+            <img src="img/ninja3.png" src2="img/cat3.png">
+            <img src="img/ninja4.png" src2="img/cat4.png">
+          
+        </div>
+
+		
+	</body>
+
+
+</html>
+
+
+  
+

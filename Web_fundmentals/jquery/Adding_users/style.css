@@ -1,0 +1,60 @@
+
+
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+#wrapper{
+    width: 950px;
+ 	background-color: yellowgreen;
+ 	margin: 0px auto;
+    padding: 20px;
+ 
+}
+
+table,th,td{
+    border: 2px solid black;
+    color: black;
+}
+
+th{
+    padding: 10px;
+}
+td{
+    padding: 10px;
+}
+
+h1{
+    padding: 10px;
+    color: #001a00;
+    border-bottom: 2px solid black;
+    display: inline-block;
+    margin-top: 30px ;
+    margin-bottom: 30px;
+}
+input{
+    margin: 10px;
+    background: yellowgreen;
+    border: 2px solid yellow;
+}
+
+form{
+    margin-left: 130px;
+}
+
+input{
+    padding: 10px;
+}
+
+button{
+    width: 80px;
+    margin-left: 214px;
+    margin-top: 30px;
+    padding: 7px;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}

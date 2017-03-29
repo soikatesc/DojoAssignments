@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Jquery</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+		<script type="text/javascript">
+            
+            var HTMLstring="";
+            for (var i=0;i<8;i++){
+                HTMLstring += '<img src="aidorucat.png" alt="aidorucat">'
+            }
+            HTMLstring +='<button>Restore</button>'
+
+		$(document).ready(function(){
+            
+            $('#wrapper').append(HTMLstring);
+            $("#wrapper").append();
+            $('img').click(function(){
+                $(this).hide("slow");
+            });
+            
+             $('button').click(function(){
+                $('img').show();
+            });
+		
+
+		});
+		
+		</script>
+	</head>
+
+
+	<body>
+
+		<div id="wrapper">
+         
+
+        </div>
+		
+	</body>
+
+ 
+		
+
+
+</html>

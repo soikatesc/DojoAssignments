@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Jquery Form</title>
+		<meta charset="UTF-8">
+        
+        <link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        
+
+		<script type="text/javascript">
+            
+           
+		$(document).ready(function(){
+            
+            $('form').submit(function(){
+                
+               var first_name=$("#first-name").val()
+               var last_name=$("#last-name").val()
+               var email_address=$("#email").val()
+               var contact=$("#contact").val()
+               
+               console.log(first_name);
+               console.log(last_name);
+               console.log(email_address);
+               console.log(contact);
+               
+
+                $('#myTable').append('<tr><td>'+first_name+'<td>'+last_name+'</td>'+'<td>'+email_address+'</td>'+'<td>'+contact+'</td>'+'</td></tr>');
+                
+                return false;
+
+            })
+            
+            
+		
+		});
+		
+
+		</script>
+	</head>
+
+
+	<body>
+       
+        <div id="wrapper">
+            <div>
+                
+                <table id="myTable">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Email Address</th>
+                            <th>Contact#</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                    
+                </table>
+                
+            </div>
+            
+            <div id="add-user">
+                <h1>Add User</h1>
+                
+                <form action="" method='post'>
+                    First Name: <input type="text" id="first-name" name="firstname" placeholder="First Name"> </br>
+                    
+                    Last Name: <input type="text" id="last-name" name="lastname" placeholder="Last Name"> </br>
+                    
+                    Email Address: <input type="text" id="email" name="emailaddress" placeholder="Email Address Name" ></br>
+                    
+                    Contact No: <input type="text" name="contactno" id="contact" placeholder="Contact No"></br>
+    
+                    <input type="submit" value="submit" id="submit">
+                    
+                </form>
+
+                <button>Add User</button>
+            </div>
+            
+        </div>
+
+		
+	</body>
+
+
+
+</html>

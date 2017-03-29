@@ -1,82 +1,55 @@
-
+/*CSS reset settings here*/
 *{
- margin: 5px;
- padding: 5px;
+ margin: 0px;
+ padding: 0px;
 }
-
 #wrapper{
- width: 970px;
+ width: 920px;
  background-color: #D4D1B2;
  margin: 0px auto;
- padding: 15px;
- 
+ padding: 10px;
+}
+#header{
+/*    background-color: aqua;*/
+    padding: 10px;
+    text-align: center;
+    width: 100%;
 }
 
-#topbar{
-    border: 2px solid red;
-    display: flex;
-    padding-top: 20px;
-    padding-left: 200px;
+#header img{
+    width: 130px;
+    height: 100px;
 }
 
-#topbar img{
-    height: 70px;
-    width: 70px;
-    margin-left: 20px;
-}
-
-#topbar h1{
-    margin-top: 50px;
-    margin-left: 10px;
-   
-}
-
-#container{
-    width: 200px;
+#header h1{
     display: inline-block;
 }
 
-#container img{
-    height: 150px;
-    width:200px;
-    border: 2px solid black;
-    background: blue;
+#content{
+    width: 100%;
+    text-align: center;
 }
-#container2{
-    width: 200px;
+
+#content img{
+    width: 150px;
+    height: 150px;
+    margin: 3px;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+#content ul{
     display: inline-block;
 }
 
-#container2 img{
-    height: 150px;
-    width:200px;
-    border: 2px solid black;
-    background: blue;
-}
-
-#container3{
-    width: 200px;
+#content li{
     display: inline-block;
 }
 
-#container3 img{
-    height: 150px;
-    width:200px;
-    border: 2px solid black;
-    background: blue;
+.blue-backg{
+    background-color: #7FB5E9;
 }
 
-#container4{
-    width: 200px;
-    display: inline-block;
+.pink-backg{
+    background-color: #F86772;
 }
-
-#container4 img{
-    height: 150px;
-    width:200px;
-    border: 2px solid black;
-    background: blue;
-}
-
-
-
