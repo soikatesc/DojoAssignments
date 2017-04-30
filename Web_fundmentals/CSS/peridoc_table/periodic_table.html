@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Periodic Table</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+       
+       <script type="text/javascript">
+
+		$(document).ready(function(){
+            
+            var blue_arr = ['1<br>H 1.008','3<br>Li</br>  6.94','Be','Na','Mg','K','Ca','Rb','Sr','Cs','Ba','Fr','Ra']
+            
+           // var green_arr = ['Li','Na']
+            
+            
+            
+            for(var i=1; i<19;i++){
+            
+                    $("#horinzantal-num").append('<li>'+i+'</li>')
+            }
+            
+            for(var i=1; i<8;i++){
+            
+                    $("#vertical-num").append('<li>'+i+'</li>')
+            }
+            
+            for(var i=0; i<blue_arr.length;i++){
+            
+                    $("#blue-list").append('<li>'+blue_arr[i]+'</li>')
+            }
+            
+            for(var i=1; i<41;i++){
+            
+                    $("#pink-list").append('<li>'+'H'+'</li>')
+            }
+            
+             for(var i=1; i<38;i++){
+            
+                    $("#orange-list").append('<li>'+'H'+'</li>')
+            }
+            
+            for(var i=1; i<29;i++){
+            
+                    $("#green-list").append('<li>'+'Na'+'</li>')
+            }
+            
+                
+		});
+            
+		</script>
+   </head>
+    
+   <body>
+      <div id="wrapper">
+                      
+          <div>
+              <ol id="horinzantal-num">
+                  <li>Group Period</li>
+              </ol>
+          </div>
+          
+          <div id="vertical">
+              <ol id="vertical-num"></ol>
+          </div>
+         
+          <div id="blue">
+            <ul id="blue-list"></ul>
+          </div>
+                    
+          <div id="pink">
+              <ul id="pink-list"></ul>
+          </div>
+          
+          <div id="orange">
+              <ul id="orange-list"></ul>
+          </div>
+          
+          <div id="green">
+              
+              <div id="name">
+                  
+                  <p>*Lanthanoids</p>
+                  <p>*</p>
+                  <p>**Actinoids</p>
+                  <p>**</p>
+                
+              </div>
+              
+              <ul id="green-list"></ul>
+              
+          </div>
+                        
+      </div><!-- end of wrapper -->
+   </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ajax Posts</title>
+		<style type="text/css">
+			.note{
+				/*display: inline-block;*/
+				border: 1px solid black;
+				padding: 10px;
+				background-color: orange;
+			}
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+
+
+
+	<body>
+		<h1>My Posts</h1>
+			<div id="note">
+				{% for post in notes%}
+					<div class='note'>				
+						{{post.notes}}				
+					</div>
+				{% endfor %}
+			</div>
+
+			<div>
+				<form action="{% url 'addnote' %}" method="post">
+		  			{% csrf_token %}
+		  			<label>Enter a note:</label><br>				
+				  	<textarea id="note" name="note"></textarea>
+				  	<input type="submit" id="submitbutton" value="Post It!">
+		  		</form>
+	  		</div>
+	</body>
+
+	 <script>
+    // You could also put this code in another JavaScript file... Remember to user $(document).ready() if the script tag is included before the DOM nodes you care about...
+    $('form').submit(function(e){
+
+    	console.log("Form submitted but no HTTP request sent to server!")
+      	// alert('hello')
+        $.ajax({
+	    	url: $(this).attr('action')/* Where should this go? */,
+	    	method: 'post'/* Which HTTP verb? */,
+	    	data: $(this).serialize()/* Any data to send along? */,
+	    	success: function(serverResponse){
+	    		console.log("Received this from server: ", serverResponse)
+	      		console.log("I should probably put that in the DOM...")
+	      		$('#note').append(serverResponse)
+	    	} /* What code should we run when the server responds? */
+  		})
+      	e.preventDefault();
+    });
+  	</script>
+
+
+</html>

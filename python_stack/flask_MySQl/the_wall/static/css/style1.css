@@ -1,0 +1,61 @@
+
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+#container{
+ width: 970px;
+ background-color: orange;
+ margin: 0px auto;
+ padding: 15px;
+ 
+}
+
+#navbar{
+	margin-bottom: 50px;
+	padding: 20px;
+}
+
+
+
+#message-box{
+	width: 800px;
+	height: 100px;
+}
+
+#comment-box{
+	width: 800px;
+	height: 50px;
+}
+
+#comment{
+	margin-left: 20px;
+}
+
+h1,h3,a{
+	display: inline-block;
+}
+
+
+h4{
+	display: inline-block;
+}
+
+#container{
+	margin: 0px auto;
+}
+#submitbutton{
+	background-color: blue;
+	color: white;
+}
+
+#messsage-user-date p{
+	display: inline-block;
+	color: green;
+}
+
+#comment-user-date p{
+	display: inline-block;
+	color: red;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Wall</title>
+		<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style1.css')}}">
+	</head>
+
+	<body>
+		<div id="container">
+			<div id='navbar'>
+				<h1>Welcome to my wall </h1>
+				<h3>Welcome {{session['user']['first_name']}} </h3>
+				<a href='/logout'>Logout</a>
+			</div>
+
+			<form action="/messages" method="POST">
+				<h2>Post a message</h2>
+				<textarea id="message-box" name="messege"></textarea>
+				<input type="submit" id="submitbutton" value="Post a message">
+			</form>
+
+			<div id="messeges">
+				{% for message in show_messages %}
+				<div id='messsage-user-date'>
+					<p>{{message['message_user_first_name']}}</p>
+					<p>{{message['message_user_last_name']}}</p>
+					<p>{{message['message_user_created_at']}}</p>
+					<p>{{message['message_id']}}</p>
+				</div>
+					<p id='post'>{{message['message']}}</p>
+					<div id="comment">
+						{% for comment in message['comments']%}
+						<div id='comment-user-date'>
+							<p>{{comment['comment_user_first_name']}}</p>
+							<p>{{comment['comment_user_last_name']}}</p>
+							<p>{{comment['comment_date']}}</p>
+						</div>
+							<p>{{comment['comment']}}</p>
+						{% endfor %}
+						<form action="/comments" method="POST">
+							<h2>Post a comment</h2>
+							<textarea id="comment-box" name="comment"></textarea>
+							<input type="hidden" name="message_id" value="{{message['message_id']}}">
+							<input type="submit" id="submitbutton" value="Post a comment">
+						</form>
+					</div>
+
+				{% endfor%}
+			
+			</div>
+		</div>
+	</body>
+</html>

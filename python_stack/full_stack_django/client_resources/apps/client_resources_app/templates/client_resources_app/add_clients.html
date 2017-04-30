@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>My clients</title>
+</head>
+	<body>
+		<h1>Add client</h1>
+		<form action="/client_add_post" method="POST">
+			{% csrf_token %}
+			<label for="business_name">Business name:</label>
+			<input type="text" name="business_name" ><br><br>
+
+			<label >email:</label>
+			<input type="text" name="email"><br><br>
+
+			<label >phone:</label>
+			<input type="number" name="phone"><br><br>
+
+			<label >Notes:</label>
+			<textarea name="notes"></textarea><br><br>
+  				
+  			<input type="submit" value="Add">
+  		</form>
+  		<a href="/"><button>Cancel</button></a>
+ 
+
+	</body>
+</html>

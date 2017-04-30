@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Weather APP</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <script type="text/javascript">
+
+//                var API_key = f1082417c9b29ab0af16117a382e875e;
+
+$(document).ready(function() {
+
+  // var url = "http://api.openweathermap.org/data/2.5/weather?q=London,uk&&appid=f1082417c9b29ab0af16117a382e875e"
+
+    $('form').submit(function() {
+
+
+        var city_name = $('#city-name').val();
+        console.log(city_name);
+
+        var url = "http://api.openweathermap.org/data/2.5/weather?q="+city_name+"&&appid=f1082417c9b29ab0af16117a382e875e&&units=imperial"
+
+        $.get(url, function(res) {
+            console.log(res);
+
+            var temp_direct_from_api = res.main.temp;
+            console.log(temp_direct_from_api);
+
+            var sky_condition = res.weather[0].description;
+            console.log(sky_condition);
+
+
+            // var temp_k = res.main.temp;
+            // var temp_f = (temp_k * 1.8) - 459.67;
+            // console.log(temp_f)
+
+//appending to html 
+
+            $( "#show" ).append( "<h1>"+res.name+"</h1>" );
+            $( "#show" ).append( "<p>"+"Temperature:"+temp_direct_from_api+"</p>" );
+            $( "#show" ).append( "<p>"+sky_condition+"</p>" );
+///////
+
+
+//condition for sky condition and setting the background images 
+            if(sky_condition=="clear sky"){
+                $('#wrapper').css({'background-image':'url(img/clear-sky.jpg)', 'background-size':'cover'});
+            }if(sky_condition=="haze"){
+                $('#wrapper').css({'background-image':'url(img/images-1.jpg)', 'background-size':'cover','background-position':'center center','z-index':'10'});
+            }
+
+            if(sky_condition=="light rain"){
+                $('#wrapper').css({'background-image':'url(img/rainy.jpg)', 'background-size':'cover'});
+            }
+//////////
+
+
+
+            $(document).on('click', '#submit', function(){
+                $(this).parent().siblings().children().hide();
+            });
+
+
+        }, 'json');
+
+
+        // don't forget to return false so the page doesn't refresh
+        return false;
+    });
+
+    
+});
+
+
+</script>
+</head>
+
+
+<body>
+
+    <div id="wrapper">
+
+        <form>
+            <input id="city-name" name="weather" placeholder="Enter City Name">
+            <input id="submit" type="submit" value="Search Weather">
+
+        </form>
+
+        <div id="show" align="center">
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+
+
+
+
+</html>

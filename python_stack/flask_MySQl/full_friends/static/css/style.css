@@ -1,0 +1,20 @@
+
+*{
+	padding: 10px;
+	margin:0px auto;
+	background-color: orange;
+	color: green;
+}
+table{
+	border-collapse: collapse;
+}
+th,td{
+	border: 1px solid white;
+}
+#add-friend{
+	display: inline-block;
+}
+#firends{
+	display: inline-block;
+	vertical-align: top;
+}

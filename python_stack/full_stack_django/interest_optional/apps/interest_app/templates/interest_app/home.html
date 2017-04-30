@@ -1,0 +1,16 @@
+<html>
+<head>
+	<title>User Interest</title>
+</head>
+<body>
+	<form action="/add" method="POST">
+		{% csrf_token %}
+
+		Name:<input type="text" name="name"><br>
+		Interests:<input type="text" name="interest"><br>
+		<input type="submit" value="submit">
+
+	</form>
+
+</body>
+</html>

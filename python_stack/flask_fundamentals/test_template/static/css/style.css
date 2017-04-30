@@ -1,0 +1,10 @@
+*{
+	padding: 0px;
+	margin: 0px auto;
+}
+
+.ninja-place{
+	height: 200px;
+	width: 200px;
+	outline: 1px solid black;
+}

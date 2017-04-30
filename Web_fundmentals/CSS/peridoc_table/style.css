@@ -1,0 +1,224 @@
+/*CSS reset settings here*/
+*{
+ margin: 0px;
+ padding: 0px;
+}
+#wrapper{
+ width: 1130px;
+ background-color: #EEEEEE;
+ margin: 0px auto;
+ padding: 15px;
+ margin-top: 50px;
+}
+
+#horinzantal-num{
+    width: 1050px;
+/*    outline: 1px solid red;*/
+}
+
+/*
+#horinzantal-num li:nth-child(n+2) {
+        margin-bottom: -2px;
+}
+*/
+
+ol li{
+    display: inline-block;
+    width: 55px;
+
+/*    border: 1px solid black;*/
+    color: red;
+    text-align: center;
+    margin-bottom: 8px;
+/*    margin-left: 10px;*/
+}
+
+#vertical{
+    display: inline-block;
+    margin-top: 25px;
+}
+
+#vertical ol li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+/*    border: 1px solid black;*/
+    color: red;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+
+#vertical-num{
+    width: 50px;
+/*    outline: 1px solid red;*/
+    display: inline-block;
+}
+
+
+#blue{
+    width: 113px;
+/*    outline: 1px dotted blue;*/
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+#blue-list{
+/*
+    width: 50px;
+    outline: 1px solid red;
+*/
+    display: inline-block;
+    text-align: center;
+}
+
+/*
+#blue-list ul li{
+    list-style-type: none;
+}
+*/
+
+#blue-list li:nth-child(1){
+    display: block;
+    height: 50px;
+    width: 50px;
+    margin-left: 4px;
+}
+
+#blue ul li{
+    list-style: none;
+    display: inline-block;
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    background-color: #689BFF;
+    vertical-align: top;
+    margin-bottom: 2px;
+    margin-left: 2px;
+}
+
+#pink{
+    /*outline: 1px dotted blue;*/
+    padding: 10px;
+    padding-right: 0;
+    padding-left: 0;
+    width: 541px;
+    vertical-align: top;
+    display: inline-block;
+    margin-top: 162px;
+}
+
+#pink-list{
+/*
+    width: 50px;
+    outline: 1px solid red;
+*/
+    display: inline-block;
+}
+
+#pink ul li{
+    list-style: none;
+    display: inline-block;
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    background-color: #FD9A98;
+    vertical-align: top;
+    margin-bottom: 2px;
+    margin-left: 2px;
+}
+
+#orange{
+/*    outline: 1px dotted blue;*/
+    padding: 10px;
+    width: 335px;
+    vertical-align: top;
+    display: inline-block;
+    padding-left: 0;
+    margin-left: -5px;
+}
+
+#orange-list li:nth-child(1){
+    display: block;
+    height: 50px;
+    width: 50px;
+    margin-left: 271px;
+}
+
+#orange ul li{
+    list-style: none;
+    display: inline-block;
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    background-color: #FECB00;
+    margin-bottom: 2px;
+    margin-left: 2px;
+}
+
+#green{
+/*    outline: 1px dotted blue;*/
+    padding: 10px;
+    width: 1000px;
+}
+
+#name{
+    width: 176px;
+    display: inline-block;
+/*    outline: 1px solid red;*/
+    vertical-align: top;
+    margin-top: 23px;
+}
+
+#name ul li{
+    list-style: none;
+}
+
+
+
+#green-list{
+    display: inline-block;
+    width: 800px;
+/*    outline: 1px solid red;*/
+
+}
+
+
+
+#green ul li{
+    list-style: none;
+    display: inline-block;
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    background-color: #1FCA21;
+    vertical-align: top;
+    margin-bottom: 2px;
+    margin-left: 2px;
+}
+
+p{
+    display: inline-block;
+}
+
+    #name p:nth-child(1){
+        color: red;
+        padding-bottom: 30px;
+    }
+
+    #name p:nth-child(2){
+        margin-left: 76px;
+    }
+
+    #name p:nth-child(3){
+        color: red;
+    }
+
+    #name p:nth-child(4){
+        margin-left: 76px;
+    }
+    
+    
+

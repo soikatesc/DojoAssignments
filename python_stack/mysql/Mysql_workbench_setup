@@ -1,0 +1,6 @@
+USE twitter;
+
+SELECT * FROM faves;
+SELECT * FROM follows;
+SELECT * FROM users;
+SELECT * FROM tweets;

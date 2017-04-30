@@ -1,0 +1,18 @@
+
+1. pip install Django:
+	installing the Django framework
+2. pip list
+	list all of the framework
+3. pip install Django:
+	I have already installed django.
+4. difference between pip list and freeze:
+	pip list shows output install packages
+	pip freeze shows the output in requierement format
+
+5. pip uninstall Django
+	uninstalled django
+6. pip show djando 
+	not showing antying becaue django already uninstalled
+7. pip search Flask
+	searcing all the line that has flask
+

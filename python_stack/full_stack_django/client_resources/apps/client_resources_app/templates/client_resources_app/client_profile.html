@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>My clients</title>
+</head>
+<body>
+	<h1>{{client.business_name}}</h1>
+	<h2>Projects:</h2>
+	{% for project in client.projects.all%}
+	<ul>
+		<li><a href="/show/projects/{{project.id}}">{{project.project_name}}</a></li>
+	</ul>
+	{% endfor %}
+	<h2>Contact:</h2>
+	<ul>
+		<li>email:{{client.email}}</li>
+		<li>phone:{{client.phone}}</li>
+	</ul>
+
+	<h2>Notes:</h2>
+	<p>{{client.notes}}</p>
+
+	<a href="/"><button>Back</button></a>
+	<a href="/{{client.id}}/addproject"><button>Add Project</button></a>
+
+</body>
+</html>

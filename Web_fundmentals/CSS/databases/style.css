@@ -1,0 +1,40 @@
+/*CSS reset settings here*/
+*{
+ margin: 0px;
+ padding: 0px;
+}
+#wrapper{
+ width: 970px;
+ background-color: #EEEEEE;
+ margin: 0px auto;
+ padding: 15px;
+ margin-top: 50px;
+}
+
+
+
+h3{
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    margin-top: 70px;
+}
+
+#header img{
+    width: 180px;
+}
+
+#nav-bar{
+     border: 1px solid black;
+}
+
+#nav-bar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    border-right: 1px solid black;
+}
+
+
+
+

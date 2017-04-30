@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Books Home</title>
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'belt_review_app/success.css' %}">
+</head>
+	<body>
+
+		<div id='header'>
+			<h1>Welcome {{request.session.user_name}}</h1>
+			<a href="/logout">Logout</a>
+		</div>
+
+
+
+		<div id="all-quote" >
+				<h1>Quotable Quotes</h1>
+
+				
+				{% for quote in quotes %}
+				<div class='all-quote-box'>
+					<p>Quoted by:{{quote.name}}</p>
+					<p>Quote: {{quote.message}}</p>
+					<p>Posted By: <a href="/users/{{quote.user.id}}">{{quote.user.name}}</a></p>
+					<a href="/favoritequote/{{quote.id}}"><button>Add to My List</button></a>
+				</div>
+				{% endfor %}		
+
+		</div>
+
+		<div id="fav-quote" >
+			<h1>Favorite Quotes</h1>
+			{% for quote in current_user.favorite_quote.all %}
+			<div class='all-quote-box'>
+				<p>Quoted by:{{quote.name}}</p>
+				<p>Quote:{{quote.message}}</p>
+				<p>Posted By: <a href="/users/{{current_user.id}}">{{current_user.name}}</a></p>
+				<a href="/removefavorite/{{quote.id}}"><button>Remove from my list</button></a>
+			</div>
+
+			{% endfor %}	
+
+		</div>
+
+		<div id='form'>
+			<h1>Contribut a Quote</h1>
+			<form action="/createquote" method="POST">
+				{% csrf_token %}
+				Quoted By:<input type="text" name="name" ><br><br>
+				Message: <textarea name="message"></textarea><br><br>
+				<input type="submit" value="Submit">
+
+			</form>
+		
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Pokemon API</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+		<script type="text/javascript">
+
+             
+            $(document).ready(function(){
+                
+
+                for( var i=1;i<152;i++){
+                    
+                    $('#container').append("<img id="+i+" src='http://pokeapi.co/media/img/"+i+".png'>");
+                     	console.log(i);
+                }
+                
+       
+                //$(document).on('click', 'img',function()
+
+                $('img').click(function(){
+                	var imgid=$(this).val("id");
+               
+
+                	console.log(imgid);
+                	console.log(imgid[0].id);
+
+        
+   
+                	//gettting data using pokemon API
+                	$.get("http://pokeapi.co/api/v1/pokemon/"+imgid[0].id+"/", function(res) {
+                    	var name = res.name;
+                    	// var type = res.types[0].name 
+                    	var height = res.height;
+                    	var weight = res.weight;
+
+
+                    	$( "#pokodesk" ).append( "<h1>"+name+"</h1>" );
+                    	$('#pokodesk').append("<img src='http://pokeapi.co/media/img/"+imgid[0].id+".png'>");
+                    	for (var i=0;i<res.types.length;i++){
+                    		// console.log(res.types[i].name);
+                    		$( "#pokodesk" ).append( "<h1>"+res.types[i].name+"</h1>" );
+                    	}
+
+                    	// // console.log(res.types[0].weight);
+                    	console.log(res);
+                    	// console.log(name);
+                    	// console.log(height);
+                    	// console.log(weight);
+                    	
+
+                    	//appending on html
+                    	// $( "#pokodesk" ).append( "<h1>"+name+"</h1>" );
+                    	// $('#pokodesk').append("<img src='http://pokeapi.co/media/img/"+imgid[0].id+".png'>");
+                    	$( "#pokodesk" ).append( "<h1>"+height+"</h1>" );
+                    	$( "#pokodesk" ).append( "<h1>"+weight+"</h1>" );
+
+
+                    	
+
+                    }, "json");
+
+                    $(document).on('click', 'img', function(){
+                    	$(this).parent().siblings().children().hide();
+                    });
+
+                   
+                });
+                
+          
+               
+             });
+
+            
+           
+		</script>
+	</head>
+
+
+	<body>
+		<div id="container">
+
+		</div>
+
+		<div id="pokodesk">
+		</div>
+        
+		
+		
+	</body>
+
+ 
+		
+
+
+</html>

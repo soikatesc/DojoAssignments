@@ -1,0 +1,14 @@
+<html>
+<head>
+	<title>Session Test</title>
+</head>
+<body>
+	<h1>This is a session test</h1>
+	{{request.session.name}}
+	<form action="/new_user" method="post">
+		{% csrf_token %}
+		<input type="text" name="first_name"></input>
+		<input type="submit" value="submit"></input>
+	</form>
+</body>
+</html>

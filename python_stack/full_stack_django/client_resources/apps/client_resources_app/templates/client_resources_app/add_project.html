@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>My Clients</title>
+</head>
+<body>
+	<h1>Add Project</h1>
+	{{cliend_id}}
+	<form action="/addprojectpost/{{cliend_id}}" method="POST">
+		{% csrf_token %}
+		<label for="project_name">Project Name:</label>
+		<input type="text" name="project_name" ><br><br>
+
+		<label >Notes:</label>
+		<textarea name="notes"></textarea><br><br>
+				
+		<input type="submit" value="Add">
+  	</form>
+  	<a href="/client/{{cliend_id}}"><button>Cancel</button></a>
+
+</body>
+</html>

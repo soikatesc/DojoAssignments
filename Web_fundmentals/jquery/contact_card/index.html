@@ -12,6 +12,10 @@
 
 		<script type="text/javascript">
             
+            function attach_h1_handlers(){
+                $(this).children('h1').hide();
+            }
+            
            
 		$(document).ready(function(){
             
@@ -28,7 +32,7 @@
                 console.log(last_name);
                 console.log(email_address);
                 console.log(contact);
-                console.log(text_area);
+//                console.log(text_area);
                 
                 var list='<h1>'+first_name+'</h1>'+
                          '<h1>'+last_name+'</h1>'+
@@ -37,6 +41,16 @@
                          '<p>'+text_area+'</p>'
 
                 $("#contact-card").append('<div id="new">'+list+'</div>');
+                
+                    $(document).on('click','#new',function(){
+
+                        $(this).children('p').show("slow",function(){
+                            attach_h1_handlers();
+                        });
+
+                    });
+                
+                
                 return false;
             });
 		
